@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "PeuPets",
+    "slug": "PeuPets",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#a965ba"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.peupets.peupets"
+    },
+    "android": {
+      "softwareKeyboardLayoutMode": "pan",
+      "permissions": [ "CAMERA", "WRITE_EXTERNAL_STORAGE", "CAMERA_ROLL" ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#707BFB"
+      },
+      "package": "com.peupets.peupets"
+    },
+    "androidNavigationBar": {
+      "barStyle": "dark-content",
+      "backgroundColor": "#FFFFFF"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "The app need accesses your camera to take photo of your pet."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/not-icon.png",
+          "color": "#ffffff"
+        }
+      ]
+    ]
+  }
+}
